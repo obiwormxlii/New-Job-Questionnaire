@@ -130,22 +130,25 @@
 		>
 	{/each}
 
-	<div class="w-96">
-		<AddNewProjectItem on:addItem={handleAddItem} />
-
-		<Button
-			class="font-bold"
-			variant="destructive"
-			onclick={() => {
-				projectItems = {
-					CustomerName: projectItems.CustomerName,
-					ProjectName: projectItems.ProjectName,
-					biminis: [],
-					windowPanels: []
-				};
-			}}>Clear All</Button
+	<div class="flex justify-between">
+		<Button class="w-80 text-2xl font-bold" variant="default" onclick={() => submit()}
+			>SUBMIT</Button
 		>
-	</div>
+		<div class="flex w-96 justify-around">
+			<AddNewProjectItem on:addItem={handleAddItem} />
 
-	<Button class="w-80 text-2xl font-bold" variant="default" onclick={() => submit()}>SUBMIT</Button>
+			<Button
+				class="font-bold"
+				variant="destructive"
+				onclick={() => {
+					projectItems = {
+						CustomerName: projectItems.CustomerName,
+						ProjectName: projectItems.ProjectName,
+						biminis: [],
+						windowPanels: []
+					};
+				}}>Clear All</Button
+			>
+		</div>
+	</div>
 </div>
