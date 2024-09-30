@@ -137,7 +137,12 @@
 			class="font-bold"
 			variant="destructive"
 			onclick={() => {
-				projectItems = { biminis: [], windowPanels: [] };
+				projectItems = {
+					CustomerName: projectItems.CustomerName,
+					ProjectName: projectItems.ProjectName,
+					biminis: [],
+					windowPanels: []
+				};
 			}}>Clear All</Button
 		>
 	</div>
