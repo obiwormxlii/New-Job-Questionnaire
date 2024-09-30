@@ -216,7 +216,7 @@
 					</div>
 				{/if}
 
-				<div class="flex justify-between">
+				<div class="flex flex-wrap justify-between gap-4">
 					<div class="flex items-center space-x-2">
 						<Checkbox
 							id="smile"
@@ -235,77 +235,6 @@
 						</Label>
 					</div>
 
-					<div class="flex items-center space-x-2">
-						<Checkbox
-							id="vents"
-							onCheckedChange={(v) => {
-								if (v !== 'indeterminate') {
-									windowOptions.features.vents = v;
-								}
-							}}
-						/>
-						<Label
-							id="vents-label"
-							for="vents"
-							class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-						>
-							Vents
-						</Label>
-					</div>
-
-					<div class="flex items-center space-x-2">
-						<Checkbox
-							id="burnStrips"
-							onCheckedChange={(v) => {
-								if (v !== 'indeterminate') {
-									windowOptions.features.burnStrips = v;
-								}
-							}}
-						/>
-						<Label
-							id="burnStrips-label"
-							for="burnStrips"
-							class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-						>
-							Burn Strips
-						</Label>
-					</div>
-
-					<div class="flex items-center space-x-2">
-						<Checkbox
-							id="cutouts"
-							onCheckedChange={(v) => {
-								if (v !== 'indeterminate') {
-									windowOptions.features.cutouts = v;
-								}
-							}}
-						/>
-						<Label
-							id="cutouts-label"
-							for="cutouts"
-							class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-						>
-							Cutouts
-						</Label>
-					</div>
-
-					<div class="flex items-center space-x-2">
-						<Checkbox
-							id="cinch"
-							onCheckedChange={(v) => {
-								if (v !== 'indeterminate') {
-									windowOptions.features.cinchStraps = v;
-								}
-							}}
-						/>
-						<Label
-							id="cinch-label"
-							for="cinch"
-							class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-						>
-							Cinch Straps
-						</Label>
-					</div>
 					<div class="flex items-center space-x-2">
 						<Checkbox
 							id="vents"
