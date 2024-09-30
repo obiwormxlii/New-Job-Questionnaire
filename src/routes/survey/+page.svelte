@@ -110,11 +110,11 @@
 		<div>
 			<Bimini bind:biminiOptions={projectItems.biminis[i]} />
 			<Button
-				class="w-80 font-bold"
+				class="font-bold"
 				variant="destructive"
 				onclick={() =>
 					(projectItems.biminis = projectItems.biminis.filter((_, index) => index !== i))}
-				>Clear</Button
+				>Remove</Button
 			>
 		</div>
 	{/each}
@@ -122,7 +122,7 @@
 	{#each projectItems.windowPanels as windowPanel, i}
 		<WindowPanel index={i} bind:windowOptions={projectItems.windowPanels[i]} />
 		<Button
-			class="w-80 font-bold"
+			class=" font-bold"
 			variant="destructive"
 			onclick={() =>
 				(projectItems.windowPanels = projectItems.windowPanels.filter((_, index) => index !== i))}
