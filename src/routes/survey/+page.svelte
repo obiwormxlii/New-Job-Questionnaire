@@ -130,11 +130,11 @@
 		>
 	{/each}
 
-	<div class="flex justify-between">
-		<Button class="w-80 text-2xl font-bold" variant="default" onclick={() => submit()}
+	<div class="flex flex-col-reverse justify-between gap-8 md:flex-row">
+		<Button class="w-full text-2xl font-bold md:w-80" variant="default" onclick={() => submit()}
 			>SUBMIT</Button
 		>
-		<div class="flex w-96 justify-around">
+		<div class="flex w-full justify-around gap-4 md:w-96">
 			<AddNewProjectItem on:addItem={handleAddItem} />
 
 			<Button
