@@ -16,7 +16,9 @@
 </script>
 
 <DropdownMenu.Root>
-	<DropdownMenu.Trigger>Add New Project Item</DropdownMenu.Trigger>
+	<DropdownMenu.Trigger asChild let:builder>
+		<Button builders={[builder]} class="font-bold">Add New Project Item</Button>
+	</DropdownMenu.Trigger>
 	<DropdownMenu.Content>
 		<DropdownMenu.Item on:click={() => addItemCallback('bimini')}>Bimini</DropdownMenu.Item>
 		<DropdownMenu.Item on:click={() => addItemCallback('windowPanel')}
