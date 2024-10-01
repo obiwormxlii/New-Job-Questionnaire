@@ -223,13 +223,35 @@ class WindowLayoutTemplate:
 
 
 def main():
-    file = "Test_Test.json"
+    # file = "Test_Test.json"
 
-    with open(file) as f:
+    jsonEntryMethod = rs.MessageBox(
+        "Did you download a JSON file? Select yes to open the file, or No to enter raw JSON.",
+        3,
+    )
+
+    if jsonEntryMethod == 7:
+        text = rs.EditBox(message="Enter JSON Data Here:", title="Enter JSON Data")
+        data = json.loads(text)
+
+    elif jsonEntryMethod == 6:
+
         try:
-            data = json.load(f)
+            file = rs.OpenFileName("Select JSON File", "JSON Files (*.json)|*.json")
         except:
-            data = {}
+            return
+
+        try:
+            with open(file) as f:
+                try:
+                    data = json.load(f)
+                except:
+                    return
+        except:
+            return
+
+    else:
+        return
 
     if data.get("biminis"):
         biminis = data.get("biminis")
