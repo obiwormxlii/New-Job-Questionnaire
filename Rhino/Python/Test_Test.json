@@ -1,0 +1,75 @@
+{
+	"CustomerName": "Test",
+	"ProjectName": "Test",
+	"biminis": [
+		{
+			"pocket": { "shape": "straight", "cutouts": false },
+			"main": { "window": false, "stayCutout": false },
+			"notes": "asdfff"
+		},
+		{
+			"pocket": { "shape": "straight", "cutouts": false },
+			"main": { "window": true, "stayCutout": false },
+			"notes": "xcvbxcvx"
+		}
+	],
+	"windowPanels": [
+		{
+			"windowStyle": "standard",
+			"glassType": "polycarbonate",
+			"attachmentType": {
+				"top": "keder",
+				"bottom": "zipperKeder",
+				"leftSide": "zipper",
+				"rightSide": "zipper"
+			},
+			"sideStyle": { "left": "butted", "right": "tapered" },
+			"features": {
+				"smiles": false,
+				"vents": false,
+				"burnStrips": false,
+				"cutouts": false,
+				"cinchStraps": false
+			},
+			"notes": ""
+		},
+		{
+			"windowStyle": "standard",
+			"glassType": "strataglass",
+			"attachmentType": {
+				"top": "keder",
+				"bottom": "zipperKeder",
+				"leftSide": "zipper",
+				"rightSide": "zipper"
+			},
+			"sideStyle": { "left": "rain-flap", "right": "rain-flap" },
+			"features": {
+				"smiles": true,
+				"vents": false,
+				"burnStrips": false,
+				"cutouts": false,
+				"cinchStraps": false
+			},
+			"notes": ""
+		},
+		{
+			"windowStyle": "standard",
+			"glassType": "strataglass",
+			"attachmentType": {
+				"top": "keder",
+				"bottom": "zipperKeder",
+				"leftSide": "",
+				"rightSide": "zipper"
+			},
+			"sideStyle": { "left": "tapered", "right": "butted" },
+			"features": {
+				"smiles": false,
+				"vents": false,
+				"burnStrips": false,
+				"cutouts": false,
+				"cinchStraps": false
+			},
+			"notes": ""
+		}
+	]
+}
